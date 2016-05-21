@@ -1,0 +1,29 @@
+body {	
+	background-image: url(http://img2-ak.lst.fm/i/u/ar0/07d7df922562425274fb29495c84ba2e);
+	background-color: blue;
+}
+
+#octopus {
+	display: block;
+	margin: 180px auto;
+}
+
+#clothing {
+	width: 167px;
+	margin: 0 auto;
+}
+
+#glasses {
+	display: block;
+	position: relative;
+	top: -370px;
+	left: 22px;
+}
+
+#hat {
+	display: block;
+	position: relative;
+	top: -600px;
+	left: -45px;
+
+}
