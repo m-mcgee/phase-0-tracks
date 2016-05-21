@@ -10,6 +10,9 @@
 
 #glasses {
 	display: block;
+	position: relative;
+	top: -370px;
+	left: 22px;
 }
 
 #hat {
