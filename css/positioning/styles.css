@@ -1,3 +1,8 @@
+body {	
+	background-image: url(http://img2-ak.lst.fm/i/u/ar0/07d7df922562425274fb29495c84ba2e);
+	background-color: blue;
+}
+
 #octopus {
 	display: block;
 	margin: 180px auto;
