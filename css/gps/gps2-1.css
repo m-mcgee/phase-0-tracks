@@ -1,0 +1,33 @@
+body {
+ width: 400px; 
+ height: 100%;
+}
+
+header {
+  background-color: pink;
+}
+
+.column-1 {
+  background-color:orange;
+  width: 40%;
+  diplay: inline-block;
+  vertical-align: top;
+  float: left;
+}
+
+.column-2 {
+  background-color: purple;
+  width: 40%;
+  diplay: inline-block;
+  vertical-align: top;
+  float: right;
+  color: green;
+}
+
+footer {
+  background-color: red;
+ /*  position: absolute; */
+ /*  bottom: 0; */
+  clear: both;
+  color: brown;
+}
