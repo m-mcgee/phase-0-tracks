@@ -1,0 +1,55 @@
+Using an elevator
+-Move forward until the elevator door is reached
+-If the door is open:
+	-Enter elevator
+-Otherwise:
+	-Press button to call the elevator
+	-Wait until the elevator doors open
+	-Enter elevator
+-Locate the floor buttons on elevator wall
+-Until the button number matches the desired floor:
+	-Move passed each button numerically, starting from 0
+-Press the button firmly to select
+-Until the floor indicator equals the number of the desired floor:
+	- Stay on the elevator
+	- Watch the floor indicator 
+	- Avoid direct eye contact with strangers
+-Wait until elevator door opens
+	- Move forward through the elevator door
+
+
+Brushing my teeth
+- Go to bathroom
+- Locate toothbrush and toothpaste
+- Unscrew lid on toothpaste
+- Until enough toothpaste:
+	-Squeeze toothpaste to dispense on toothbrush bristles
+- Turn on water 
+-  Until bristles are wet
+	-Place toothbrush under stream of water
+- Turn water off to conserve 
+- Place toothbrush in mouth
+- If running late for work:
+	- Brush frantically for one minute; trying to get all your teeth
+	- Spit out toothpaste; getting some on your shirt
+	- rinse sink 
+	- put tooth brush away
+- Otherwise:
+	- Start at the right side of your mouth
+	- Until you reach the left side of your mouth:
+		- Until clean:
+			-Brush the front plane of your teeth 
+		- Move brush to the left
+	- Move toothbrush to the back plane of your teeth
+	-Start at the right side of your mouth
+	- Until you reach the left side of your mouth:
+		- Until clean:
+			-Brush the back plane of your teeth 
+		- Move brush to the left
+	- Until clean:
+		-Brush tongue
+	- Spit out toothpaste into sink
+	- Until clean of toothpaste
+		- Rinse sink 
+	- Put away toothbrush 
+		
