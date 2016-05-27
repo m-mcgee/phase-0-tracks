@@ -8,7 +8,7 @@
 def encrypt
 	index = 0
 	string = "hello"
-	while index < string.length
+	while index < string.length - 1
 	index += 1
 	p string[index]
 	end 
@@ -17,3 +17,20 @@ end
 puts encrypt
 
 
+#Decrypt
+#Start from the last character in the string
+#Until we reach the first charater in the string
+# Decrease index place by one
+# puts the new value of the variable 
+
+def decrypt
+	string = "goodbye"
+	index = string.length - 1 
+	
+	while index > 0
+		index -= 1
+		p string[index]
+	end
+end
+
+puts decrypt
