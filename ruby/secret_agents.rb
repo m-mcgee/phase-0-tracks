@@ -41,10 +41,28 @@ def decrypt(string)
 	p answer
 end
 
-encrypt("abc") 
-encrypt("zed") 
-decrypt("bcd") 
-decrypt("afe")
+#encrypt("abc") 
+#encrypt("zed") 
+#decrypt("bcd") 
+#decrypt("afe")
 
-decrypt(encrypt("swordfish"))
+#decrypt(encrypt("swordfish"))
 # this "nested method" works because each method has a return value that can be passed through the next method 
+
+# ask user if encrypt or decrypt
+# ask for password
+# if encrypt run encrypt(password)
+# else run decrypt(password)
+def interface
+	puts "would you like to encrypt or decrypt?"
+	answer = gets.chomp
+	puts "enter the password"
+	password = gets.chomp
+	if answer == "encrypt"
+		encrypt(password)
+	else
+		decrypt(password)
+	end 
+end
+
+interface
