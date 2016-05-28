@@ -5,9 +5,8 @@
 #-put the new value of the variable
 
 
-def encrypt
+def encrypt(string)
 	index = 0
-	string = "hello"
 	while index < string.length - 1
 	index += 1
 	p string[index]
@@ -34,3 +33,8 @@ def decrypt
 end
 
 puts decrypt
+
+encrypt("abc") 
+encrypt("zed") 
+decrypt("bcd") 
+decrypt("afe")
