@@ -8,6 +8,9 @@ def encrypt(str)
 	i = 0
 	while i < str.length
 	letter = str[i].next
+		if letter == "aa"
+			letter = "a"
+		end
 	enc_str = enc_str + letter
 	i += 1
 	end
