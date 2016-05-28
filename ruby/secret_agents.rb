@@ -45,3 +45,6 @@ encrypt("abc")
 encrypt("zed") 
 decrypt("bcd") 
 decrypt("afe")
+
+decrypt(encrypt("swordfish"))
+# this "nested method" works because each method has a return value that can be passed through the next method 
