@@ -1,38 +1,42 @@
-#Encrypt 
-#-Start at first character in string (index 0)
-#Until the index reaches the end of the string
-#-Increment index place by one 
-#-put the new value of the variable
+# take string
+# until index < string.length
+# for letter at index advance one letter in alphabet and add to encripted_string
+# increase index by 1
 
-
-def encrypt(string)
-	index = 0
-	while index < string.length - 1
-	index += 1
-	p string[index]
-	end 
-end
-
-puts encrypt
-
-
-#Decrypt
-#Start from the last character in the string
-#Until we reach the first charater in the string
-# Decrease index place by one
-# puts the new value of the variable 
-
-def decrypt
-	string = "goodbye"
-	index = string.length - 1 
-	
-	while index > 0
-		index -= 1
-		p string[index]
+def encrypt(str)
+	enc_str = ""
+	i = 0
+	while i < str.length
+	letter = str[i].next
+	enc_str = enc_str + letter
+	i += 1
 	end
+	p enc_str
 end
 
-puts decrypt
+# take string
+# until index < string.length
+# find letter at index
+# go back one letter in the alphabet and add to decrypted_string
+# increase index by 1
+
+def prev_letter_index(letter)
+	abc = "abcdefghijklmnopqrstuvwxyz"
+	index = abc.index(letter)
+	index_2 = index - 1
+end
+
+def decrypt(string)
+	index = 0
+	abc = "abcdefghijklmnopqrstuvwxyz"
+	answer = ""
+	while index < string.length
+		letter = abc[prev_letter_index(string[index])]
+		index += 1
+		answer = answer + letter
+	end
+	p answer
+end
 
 encrypt("abc") 
 encrypt("zed") 
