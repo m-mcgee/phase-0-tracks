@@ -38,3 +38,7 @@ hash.delete_if {|letter, num| letter <= "B"}
 #answer problem 2
 array.keep_if {|num| num > 3}
 hash.keep_if {|letter, num| letter > "B"}
+
+#answer problem 3
+array.select {|num| num > 4}
+hash.select {|lett,num| num > 2}
