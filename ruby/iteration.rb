@@ -42,3 +42,7 @@ hash.keep_if {|letter, num| letter > "B"}
 #answer problem 3
 array.select {|num| num > 4}
 hash.select {|lett,num| num > 2}
+
+#answer problem 4
+array.drop_while {|i| i < 6}
+hash.reject! { |lett, num| lett < "C" }
