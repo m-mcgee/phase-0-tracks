@@ -26,21 +26,31 @@ p "the usual" << " suspects"
 p "the usual".concat(" suspects")
 #=> "the usual suspects"
 
-# " suspects".<???>
+p " suspects".prepend("the usual")
+p " suspects".insert(0, "the usual")
 # => "the usual suspects"
 
-# "The case of the disappearing last letter".<???>
+
+p "The case of the disappearing last letter".chop
+p "The case of the disappearing last letter"[0..-2]
+p "The case of the disappearing last letter".replace "The case of the disappearing last lette"
 # => "The case of the disappearing last lette"
 
-# "The mystery of the missing first letter".<???>
+p "The mystery of the missing first letter"[1..-1]
+p "The mystery of the missing first letter".slice(1, 100)
+p "The mystery of the missing first letter".delete "T"
+p "The mystery of the missing first letter".gsub(/T/, "")
+p "The mystery of the missing first letter".reverse.chop.reverse
 # => "he mystery of the missing first letter"
 
-# "Elementary,    my   dear        Watson!".<???>
+p "Elementary,    my   dear        Watson!".squeeze(" ")
+p "Elementary,    my   dear        Watson!".squeeze
+p "Elementary,    my   dear        Watson!".split(" ").join(" ")
 # => "Elementary, my dear Watson!"
 
-# "z".<???>
+p "z".ord
 # => 122 
 # (What is the significance of the number 122 in relation to the character z?)
 
-# "How many times does the letter 'a' appear in this string?".<???>
+p "How many times does the letter 'a' appear in this string?".count "a"
 # => 4
