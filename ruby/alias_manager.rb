@@ -66,9 +66,32 @@ def char_replace(new_name)
 		new_lett_string += char[i]
 		i += 1
 	end
-	p new_lett_string
+	new_lett_string
 end
 
 
-rev_name = reverse_first_last("Felicia Torres")
-char_replace(rev_name)
+
+
+agent_ids = {}
+name_entry = ""
+while 1 == 1
+	puts "Please enter a name:"
+	name_entry = gets.chomp
+	if name_entry == "quit"
+		break
+	end
+	rev_name = reverse_first_last(name_entry)
+	agent_name = char_replace(rev_name)
+	agent_ids[name_entry] = agent_name
+end 
+
+# i = 0
+# while i < agent_ids.length
+# 	puts "#{agent_ids[agent_name]} is really #{agent_ids[name_entry]}"
+# 	p agent_ids[:agent_name]
+# 	p agent_ids[:name_entry]
+# 	i += 1
+# end 
+
+
+
