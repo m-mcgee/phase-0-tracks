@@ -70,8 +70,6 @@ def char_replace(new_name)
 end
 
 
-
-
 agent_ids = {}
 name_entry = ""
 while 1 == 1
@@ -85,13 +83,9 @@ while 1 == 1
 	agent_ids[name_entry] = agent_name
 end 
 
-# i = 0
-# while i < agent_ids.length
-# 	puts "#{agent_ids[agent_name]} is really #{agent_ids[name_entry]}"
-# 	p agent_ids[:agent_name]
-# 	p agent_ids[:name_entry]
-# 	i += 1
-# end 
+agent_ids.each do |key, value|
+	puts "#{value} is really #{key}"
+end 
 
 
 
