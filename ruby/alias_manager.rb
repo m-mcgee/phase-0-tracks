@@ -73,7 +73,7 @@ end
 agent_ids = {}
 name_entry = ""
 while 1 == 1
-	puts "Please enter a name:"
+	puts "Please enter a name (type 'quit' to exit): "
 	name_entry = gets.chomp
 	if name_entry == "quit"
 		break
