@@ -17,6 +17,9 @@ class Puppy
   def play_dead
   	puts "The dog is not moving."
   end
+  def initialize
+  	puts "Initializing new puppy instance ..."
+  end
 end
 
 dog = Puppy.new 
@@ -25,3 +28,21 @@ dog.speak(3)
 dog.roll_over
 dog.dog_years(3)
 dog.play_dead
+
+
+class Superhero
+	def initialize
+		puts "Initialize the Superhero ..."
+	end
+	def punch(int)
+		int.times{puts "Pow!"}
+	end
+	def kick(area)
+		puts "Kick in the #{area}"
+	end
+end
+
+
+
+
+
