@@ -43,6 +43,30 @@ class Superhero
 end
 
 
+superman = Superhero.new
+superman.punch(2)
+superman.kick("head")
+
+superhero_directory = []
+i = 0
+
+while i < 50
+	superhero_directory[i] = Superhero.new
+	i += 1
+end
+
+superhero_directory.each do |hero_at_index|
+	hero_at_index.punch(2)
+	hero_at_index.kick("body")
+end
+
+
+
+
+
+
+
+
 
 
 
