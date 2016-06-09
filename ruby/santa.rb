@@ -8,7 +8,7 @@
 
 class Santa 
 	attr_reader :ethnicity
-	attr_accessor :gender, :age
+	attr_accessor :gender, :age, :reindeer_ranking
 
 	def initialize(gender, ethnicity)
 		puts "Initializing Santa instance ..."
@@ -65,7 +65,7 @@ end
 example_genders = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A"]
 example_ethnicities = ["black", "Latino", "white", "Japanese-African", "prefer not to say", "Mystical Creature (unicorn)", "N/A"]
 
-1000.times do |x|
+1000.times do 
 	puts
 	santa = Santa.new(example_genders.shuffle[0], example_ethnicities.shuffle[0])
 	puts "Gender: #{santa.gender}"
