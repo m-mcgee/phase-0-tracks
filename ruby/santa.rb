@@ -7,8 +7,8 @@
 #   give Santa a default age of 0
 
 class Santa 
-	attr_reader :age, :ethnicity
-	attr_accessor :gender
+	attr_reader :ethnicity
+	attr_accessor :gender, :age
 
 	def initialize(gender, ethnicity)
 		puts "Initializing Santa instance ..."
@@ -51,5 +51,34 @@ end
 # sandy_claws.ethnicity
 # sandy_claws.age
 
+
+# Release 4
+# Create lots of Santas
+#		Pick how many Santas you want
+# 		Make a santa
+# 			Randomize gender list & Give Santa random gender
+#   		Randomize ethnicity list & Give Santa random ethnicity  
+#     	Set each Santa's age to random number between 0 and 140
+# 			print out attributes of Santa & move to next Santa
+# 		 
+
 example_genders = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A"]
 example_ethnicities = ["black", "Latino", "white", "Japanese-African", "prefer not to say", "Mystical Creature (unicorn)", "N/A"]
+
+1000.times do
+	puts
+	santa = Santa.new(example_genders.shuffle[0], example_ethnicities.shuffle[0])
+	puts "Gender: #{santa.gender}"
+	puts "Ethnicity: #{santa.ethnicity}"
+	santa.age = rand(140)
+	puts "Age: #{santa.age}"
+end
+
+
+
+
+
+
+
+
+
