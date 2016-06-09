@@ -37,17 +37,19 @@ class Santa
 
 end
 
-st_nick = Santa.new("male", "imaginary")
-p st_nick
-st_nick.speak
-st_nick.eat_milk_and_cookies("chocolate chip")
-st_nick.gender = "agender"
-st_nick.celebrate_birthday
-p st_nick
+# st_nick = Santa.new("male", "imaginary")
+# p st_nick
+# st_nick.speak
+# st_nick.eat_milk_and_cookies("chocolate chip")
+# st_nick.gender = "agender"
+# st_nick.celebrate_birthday
+# p st_nick
 
-sandy_claws = Santa.new("bigender", "white")
-p sandy_claws
-sandy_claws.get_mad_at("Dasher")
-sandy_claws.ethnicity
-sandy_claws.age
+# sandy_claws = Santa.new("bigender", "white")
+# p sandy_claws
+# sandy_claws.get_mad_at("Dasher")
+# sandy_claws.ethnicity
+# sandy_claws.age
 
+example_genders = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A"]
+example_ethnicities = ["black", "Latino", "white", "Japanese-African", "prefer not to say", "Mystical Creature (unicorn)", "N/A"]
