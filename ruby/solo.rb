@@ -76,7 +76,9 @@ def user_interface
 		points_entry = gets.chomp.to_i
 		player_list << BasketballPlayer.new(player_entry, team_entry, jersey_entry, player_entry)
 	end 
-	
+	player_list.each do |player|
+		p player.name
+	end
 end
 
 user_interface
