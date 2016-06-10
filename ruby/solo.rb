@@ -63,8 +63,10 @@ end
 # User interface
 def user_interface 
 	player_list = []
+
 	puts "How many players would you like to enter?"
 	num_entries = gets.chomp.to_i
+	
 	num_entries.times do
 		puts "Enter the player's name:"
 		player_entry = gets.chomp
@@ -76,7 +78,7 @@ def user_interface
 		points_entry = gets.chomp.to_i
 		player_list << BasketballPlayer.new(player_entry, team_entry, jersey_entry, points_entry)
 	end 
-	
+
 	player_list.each do |player|
 		puts
 		puts "----Player Info-----"
