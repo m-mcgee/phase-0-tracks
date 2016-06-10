@@ -14,7 +14,7 @@ class BasketballPlayer
 	attr_accessor :team, :jersey_number
 
 	def initialize(name, team, jersey_number, current_points)
-		puts "---Player Info and Stats---"
+		puts "---Player Info Saved---"
 		@name = name
 		@team = team
 		@jersey_number = jersey_number
@@ -50,7 +50,8 @@ class BasketballPlayer
 
 end
 
-player = BasketballPlayer.new("KD", "OKC Thunder", 35, 20)
+# Driver Code
+# player = BasketballPlayer.new("KD", "OKC Thunder", 35, 20)
 # player.slam_dunk
 # player.shoot
 # player.pass("Westbrook")
@@ -58,3 +59,24 @@ player = BasketballPlayer.new("KD", "OKC Thunder", 35, 20)
 # player.jersey_number = 9
 # p player.jersey_number
 
+
+# User interface
+def user_interface 
+	player_list = []
+	puts "How many players would you like to enter?"
+	num_entries = gets.chomp.to_i
+	num_entries.times do
+		puts "Enter the player's name:"
+		player_entry = gets.chomp
+		puts "What team does #{player_entry} play for?"
+		team_entry = gets.chomp
+		puts "Enter #{player_entry}'s jersey number:"
+		jersey_entry = gets.chomp.to_i
+		puts "How many points does #{player_entry} currently have?"
+		points_entry = gets.chomp.to_i
+		player_list << BasketballPlayer.new(player_entry, team_entry, jersey_entry, player_entry)
+	end 
+	
+end
+
+user_interface
