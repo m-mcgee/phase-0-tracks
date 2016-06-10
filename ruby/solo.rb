@@ -11,7 +11,7 @@
 
 class BasketballPlayer
 	attr_reader :name
-	attr_accessor :team, :jersey_number
+	attr_accessor :team, :jersey_number, :points_scored
 
 	def initialize(name, team, jersey_number, current_points)
 		puts "---Player Info Saved---"
@@ -74,10 +74,16 @@ def user_interface
 		jersey_entry = gets.chomp.to_i
 		puts "How many points does #{player_entry} currently have?"
 		points_entry = gets.chomp.to_i
-		player_list << BasketballPlayer.new(player_entry, team_entry, jersey_entry, player_entry)
+		player_list << BasketballPlayer.new(player_entry, team_entry, jersey_entry, points_entry)
 	end 
+	
 	player_list.each do |player|
-		p player.name
+		puts
+		puts "----Player Info-----"
+		puts "Player name: #{player.name}"
+		puts "Team: #{player.team}"
+		puts "Jersey Number: #{player.jersey_number}"
+		puts "Current Points: #{player.points_scored}"
 	end
 end
 
