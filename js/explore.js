@@ -5,14 +5,27 @@
 // store letter in place holder adding any previous letters behind it
 
 
-var string = "Reverse Me"
-var reverseString = ""
-
-for (var i = 0; i <= string.length -1; i++) {
-	reverseString = string[i] + reverseString;
+// reverse function 
+function reverse(input) {
+	var reverseString = "";
+	for (var i = 0; i <= input.length -1; i++) {
+		reverseString = input[i] + reverseString;
+	}
+	return reverseString
 }
 
-console.log(reverseString)
+// storing result of the function in variable
+var finalOutput = (reverse("Hello, my name is Matt!"))
+
+// driver code to print variable if condition is true
+var reverse = true
+
+if (reverse) {
+	console.log(finalOutput);
+} else {
+	console.log("Nothing to see here.")
+}
+
 
 
 
