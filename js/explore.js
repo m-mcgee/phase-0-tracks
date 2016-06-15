@@ -18,9 +18,9 @@ function reverse(input) {
 var finalOutput = (reverse("Hello, my name is Matt!"))
 
 // driver code to print variable if condition is true
-var reverse = true
+var reverseMyString = true
 
-if (reverse) {
+if (reverseMyString) {
 	console.log(finalOutput);
 } else {
 	console.log("Nothing to see here.")
