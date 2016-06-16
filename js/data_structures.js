@@ -23,3 +23,18 @@ if (colors.length == horseName.length){
 }
 
 console.log(nameAndColor);
+
+
+function Cars (color, speed, numberDoors) {
+	this.color = color;
+	this.speed = speed;
+	this.numberDoors = numberDoors;
+	this.horn = function() {console.log("Beep!");};
+	console.log("New Car initialized");
+}
+
+var newCar = new Cars ("blue", 90, 4);
+newCar.horn();
+console.log(newCar);
+
+
