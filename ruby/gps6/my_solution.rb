@@ -64,11 +64,14 @@ private
     else
       speed += 2.5
     end
-
-    puts " and will spread across the state in #{speed} months.\n\n"
-
+    print_speed(speed)
+    
   end
 
+  def print_speed(speed)
+    puts " and will spread across the state in #{speed} months.\n\n"
+  end  
+   
 end
 
 #=======================================================================
