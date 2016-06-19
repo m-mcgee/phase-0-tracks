@@ -100,4 +100,23 @@ end
 #=======================================================================
 # Reflection Section
 
+# What are the differences between the two different hash syntaxes shown in the state_data file?
+# - You can use the old hash rocket syntax with strings or methods as a key
+# - The new syntax requires you to use symbols as your key 
+
+# What does require_relative do? How is it different from require?
+# - Allows code written in a seperate file to be accessed
+# - require_relative is used to access a file relative to the current file
+# - require is used to access a file at a specific file location
+
+# What are some ways to iterate through a hash?
+# - you can iterate by the key, value, or by key/value pairs
+
+# When refactoring virus_effects, what stood out to you about the variables, if anything?
+# - Because these variables were already assigned as instance variables in the initialize method
+# - the variables were already accessible to the method, so the method didn't require arguments to be passed in
+
+# What concept did you most solidify in this challenge?
+# - I'm not sure I would say 'solidified', but accessing the data inside nested hash became more clear
+# - lightbulb moment: I realized data structures are accessed similarly to how files are structured locally on a machine (oh, duh!)
 
