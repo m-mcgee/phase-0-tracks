@@ -19,6 +19,18 @@
 // 			set match status to true
 // return match status
 
+// Release 2
+// Take in a number for how many words you want
+// Make a blank list to add your words to
+// Until you get that many words
+// 	For EACH word
+// 		randomly pick a number of letters
+//			Until your word has that many letters
+//				randomly pick a letter and add it to your word
+// 	Store the word in the list
+ 
+
+
 // ------ Functions ----------------
 
 function findLongPhrase(phraseList) {
@@ -47,6 +59,40 @@ function findKeyValueMatch(object1, object2) {
 }
 
 
+// Release 2
+// Take in a number for how many words you want
+// Make a blank list to add your words to
+// Until you get that many words
+// 	For EACH word
+// 		randomly pick a number of letters
+//			Until your word has that many letters
+//				randomly pick a letter and add it to your word
+// 	Store the word in the list
+ 
+function randomWord() {
+	var alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"]
+	var word = ""
+	var randomLetterCount = Math.floor((Math.random() * 10) + 1);
+
+
+	for (var lett = 0; lett < randomLetterCount; lett ++) {
+
+		word += alphabet[Math.floor((Math.random() * 10))]
+		}
+	return word;
+}
+
+function randomWordsArray(howManyItems) {
+	var arrayRandomWords = []
+
+
+	for (var i = 0; i < howManyItems; i++) {
+		word = randomWord();
+		arrayRandomWords.push(word);
+	}
+ console.log(arrayRandomWords);
+}
+
 
 // ------ Driver Code ---------------
 
@@ -62,5 +108,6 @@ console.log(findKeyValueMatch(myObject, myObject2))
 console.log(findKeyValueMatch(myObject, myObject3))
 
 
+// randomWordsArray(4)
 
 
