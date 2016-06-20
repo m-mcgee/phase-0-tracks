@@ -40,7 +40,7 @@ function findLongPhrase(phraseList) {
 			longestPhase = phraseList[i]
 		}
 	} 
-	console.log(longestPhase)
+	return longestPhase
 }
 
 
@@ -58,16 +58,6 @@ function findKeyValueMatch(object1, object2) {
 	return hasMatch;
 }
 
-
-// Release 2
-// Take in a number for how many words you want
-// Make a blank list to add your words to
-// Until you get that many words
-// 	For EACH word
-// 		randomly pick a number of letters
-//			Until your word has that many letters
-//				randomly pick a letter and add it to your word
-// 	Store the word in the list
  
 function randomWord() {
 	var alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"]
@@ -90,7 +80,7 @@ function randomWordsArray(howManyItems) {
 		word = randomWord();
 		arrayRandomWords.push(word);
 	}
- console.log(arrayRandomWords);
+ return arrayRandomWords;
 }
 
 
@@ -107,7 +97,13 @@ var myObject3 = {name: "Jeff", age: 99}
 console.log(findKeyValueMatch(myObject, myObject2))
 console.log(findKeyValueMatch(myObject, myObject3))
 
-
 // randomWordsArray(4)
+for (var i = 0; i < 10; i++) {
+	var myWords = randomWordsArray(4);
+	console.log(myWords);
+	var longPhrase = findLongPhrase(myWords);
+	console.log("Longest word: " + longPhrase);
+	console.log(" ");
+}
 
 
