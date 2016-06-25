@@ -1,0 +1,39 @@
+1.
+sqlite> SELECT * FROM patients;
+1|Jim|33|false|1
+2|Dwight|37|true|2
+3|Michael|45|false|1
+4|Pam|31|True|3
+
+2.
+sqlite> UPDATE patients SET doctor_id=3 WHERE name="Michael";
+
+3.
+sqlite> SELECT * FROM patients, doctors WHERE patients.doctor_id = doctors.id;
+1|Jim|33|false|1|1|Dr. Dre|17|true
+2|Dwight|37|true|2|2|Dr. Lecter|0|false
+3|Michael|45|false|3|3|Dr. Hibbert|22|true
+4|Pam|31|True|3|3|Dr. Hibbert|22|true
+
+4.
+sqlite> SELECT patients.name, doctors.name FROM patients JOIN doctors ON patients.doctor_id = doctors.id;
+Jim|Dr. Dre
+Dwight|Dr. Lecter
+Michael|Dr. Hibbert
+Pam|Dr. Hibbert
+
+5. 
+sqlite> DELETE FROM patients WHERE name="Michael";
+
+
+===RELEASE 3===
+sqlite> SELECT patients.name, patients.new_patient FROM patients LEFT JOIN doctors on patients.doctor_id = doctors.id;
+Jim|false
+Dwight|true
+Pam|True
+
+sqlite> SELECT patients.name, patients.doctor_id FROM patients INNER JOIN doctors on patients.doctor_id = doctors.id;
+Jim|1
+Dwight|2
+Pam|3
+
