@@ -1,5 +1,7 @@
 require 'sqlite3'
 
+# Build database for song reviews 
+# Create tables for reviews, users, songs, albums, and Bands
 review_database = SQLite3::Database.new("rev_db.db")
 
 sql_command = <<-SQL
@@ -53,6 +55,8 @@ SQL
 
 review_database.execute(sql_command)
 
+
+# Show valid users in the database to choose from
 puts "Enter your user id from the list: "
 users_list = review_database.execute("SELECT * FROM users")
 users_list.each do |user|
@@ -60,6 +64,9 @@ users_list.each do |user|
 end
 user_entry = gets.chomp.to_i
 
+
+
+# Pick which song from the database the user wants to review
 puts "Which song would you like to review?"
 song_list = review_database.execute("SELECT * FROM songs")
 song_list.each do |song|
@@ -67,9 +74,10 @@ song_list.each do |song|
 end
 song_choice = gets.chomp.to_i
 
+
+# Ask the user to rate the song and INSERT into the reviews table
 puts "How many stars would you rate this song (1-5)? 1 = Crap : 5 = GREAT"
 num_stars = gets.chomp.to_i
-
 
 review_database.execute("
 	INSERT INTO reviews
@@ -78,6 +86,9 @@ review_database.execute("
 	  [num_stars, user_entry, song_choice])
 
 
+
+# Collect all data related to the new review
+# Print review information 
 new_review = review_database.execute("
 	SELECT users.name, songs.name, bands.name, reviews.rating 
 	FROM reviews 
