@@ -1,31 +1,35 @@
+body {
+	margin: 0;
+	padding: 0;
+}
 
 header nav ul {
-	padding: 0;
-	margin: 0;
+	width: 100%;
+	padding: 10px;
+	margin: 0 auto;
 	text-align: center;
 	list-style: none;
-	background-color: #adadad;
-	height: 0;
-	overflow: hidden;
+	background-color: #505050;
+	display: none;
 }
 
-header nav ul.open {
-	height: auto;
-}
 
 nav ul li {
 	width: 100%;
-	margin: 10px;
+	margin-top: 10px;
 	padding: 0px;
 }
 
 nav ul li a {
 	display: block;
-	width: 100%;
 	color: white;
 	font-family: "arial", sans-serif;
 	text-decoration: none;
 	font-size: 2.2em;
+}
+
+nav ul li a:hover {
+	color: #9aa;	
 }
 
 
@@ -34,12 +38,17 @@ nav ul li a {
 	height: 90px;
 	width: 100%;
 	background: url("images/menu_icon.png") no-repeat center center;
-	background-color: #adadad;
+	background-color: #737383;
 	position: relative;
 	margin: 0 auto;
 	padding: 0;
 	cursor: pointer;
 	border-bottom: solid 3px black;
+}
+
+main {
+	width: 80%;
+	margin: 0 auto;
 }
 
 main h1 {
