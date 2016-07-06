@@ -25,3 +25,25 @@ post '/students' do
 end
 
 # add static resources
+
+# Remove graduating student
+
+get '/students/graduating' do
+	erb :graduate_student
+end
+
+post '/delete' do
+	db.execute("DELETE FROM students WHERE name=?", [params['name']])
+	redirect '/'
+end
+
+
+
+
+
+
+
+
+
+
+
