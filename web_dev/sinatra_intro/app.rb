@@ -82,16 +82,18 @@ end
 
 # Make a route that allows the user to search the database in some way
 # -- maybe for students who have a certain first name, or some other attribute.
-get '/search/:campus' do
-  campus = params[:campus]
-  student_list = db.execute("SELECT * FROM students WHERE campus=?", [params[:campus]])
-  student = ""
-  student_list.each do |student|
-    student[:id] = "ID: #{student['id']}<br>"
-    student[:name] = "Name: #{student['name']}<br>"
-    student[:age] = "Age: #{student['age']}<br>"
-    student[:campus] = "Campus: #{student['campus']}<br><br>"
-  end
-  student.to_s
-end
+# 
+
+# get '/search/:campus' do
+#   campus = params[:campus]
+#   student_list = db.execute("SELECT * FROM students WHERE campus=?", [params[:campus]])
+#   student = ""
+#   student_list.each do |student|
+#     student[:id] = "ID: #{student['id']}<br>"
+#     student[:name] = "Name: #{student['name']}<br>"
+#     student[:age] = "Age: #{student['age']}<br>"
+#     student[:campus] = "Campus: #{student['campus']}<br><br>"
+#   end
+#   student.to_s
+# end
 
